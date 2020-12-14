@@ -1,2 +1,5 @@
 # Asian-American-Welath-Gap-
-This is the first real econometrics paper I wrote in Fall of 2018. It details socioeconomic demographics affecting Asian Americans. 
+
+This paper utilizes CPS data to measure socioeconomic demographics affecting the Asian-American wealth gap. I utilize basic linear regression techniques to measure changes in income over time. 
+
+I have included data, do-files, and my final write up for this project. 
