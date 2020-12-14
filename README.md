@@ -1,4 +1,4 @@
-# Asian-American-Welath-Gap-
+# Asian-American-Wealth-Gap-
 
 This paper utilizes CPS data to measure socioeconomic demographics affecting the Asian-American wealth gap. I utilize basic linear regression techniques to measure changes in income over time. 
 
