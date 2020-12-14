@@ -1,0 +1,107 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/Cho/Desktop/2016 Single Occupation .smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}28 Oct 2018, 22:28:01
+
+{com}. regress y educ age age2 Executives Services Labor asian white
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}   185,487
+{txt}{hline 13}{c +}{hline 34}   F(8, 185478)    = {res}  7931.28
+{txt}       Model {c |} {res} 1.3818e+14         8  1.7273e+13   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 4.0394e+14   185,478  2.1778e+09   {txt}R-squared       ={res}    0.2549
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2549
+{txt}       Total {c |} {res} 5.4212e+14   185,486  2.9227e+09   {txt}Root MSE        =   {res}  46667
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 767.6295{col 26}{space 2} 34.08079{col 37}{space 1}   22.52{col 46}{space 3}0.000{col 54}{space 4} 700.8319{col 67}{space 3}  834.427
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 192.3305{col 26}{space 2} 29.68582{col 37}{space 1}    6.48{col 46}{space 3}0.000{col 54}{space 4}  134.147{col 67}{space 3}  250.514
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-2.173999{col 26}{space 2} .3254014{col 37}{space 1}   -6.68{col 46}{space 3}0.000{col 54}{space 4}-2.811778{col 67}{space 3} -1.53622
+{txt}{space 2}Executives {c |}{col 14}{res}{space 2} 61341.32{col 26}{space 2} 370.8873{col 37}{space 1}  165.39{col 46}{space 3}0.000{col 54}{space 4} 60614.38{col 67}{space 3} 62068.25
+{txt}{space 4}Services {c |}{col 14}{res}{space 2} 24477.77{col 26}{space 2} 340.7188{col 37}{space 1}   71.84{col 46}{space 3}0.000{col 54}{space 4} 23809.96{col 67}{space 3} 25145.57
+{txt}{space 7}Labor {c |}{col 14}{res}{space 2} 33456.12{col 26}{space 2} 412.5323{col 37}{space 1}   81.10{col 46}{space 3}0.000{col 54}{space 4} 32647.56{col 67}{space 3} 34264.67
+{txt}{space 7}asian {c |}{col 14}{res}{space 2} 5520.564{col 26}{space 2} 523.5651{col 37}{space 1}   10.54{col 46}{space 3}0.000{col 54}{space 4} 4494.388{col 67}{space 3} 6546.739
+{txt}{space 7}white {c |}{col 14}{res}{space 2} 3596.477{col 26}{space 2} 290.1279{col 37}{space 1}   12.40{col 46}{space 3}0.000{col 54}{space 4} 3027.833{col 67}{space 3}  4165.12
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-9188.009{col 26}{space 2} 392.5389{col 37}{space 1}  -23.41{col 46}{space 3}0.000{col 54}{space 4}-9957.376{col 67}{space 3}-8418.642
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. by asian white other, sort: regress y educ age age2 Executives Services Labor
+
+{txt}{hline}
+-> asian = 0, white = 0, other = 1
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    31,806
+{txt}{hline 13}{c +}{hline 34}   F(6, 31799)     = {res}  1739.78
+{txt}       Model {c |} {res} 1.4008e+13         6  2.3346e+12   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 4.2672e+13    31,799  1.3419e+09   {txt}R-squared       ={res}    0.2471
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2470
+{txt}       Total {c |} {res} 5.6680e+13    31,805  1.7821e+09   {txt}Root MSE        =   {res}  36632
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 459.1129{col 26}{space 2} 68.46045{col 37}{space 1}    6.71{col 46}{space 3}0.000{col 54}{space 4} 324.9278{col 67}{space 3}  593.298
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 174.6067{col 26}{space 2} 57.41083{col 37}{space 1}    3.04{col 46}{space 3}0.002{col 54}{space 4} 62.07926{col 67}{space 3} 287.1341
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-1.878134{col 26}{space 2} .6368166{col 37}{space 1}   -2.95{col 46}{space 3}0.003{col 54}{space 4} -3.12632{col 67}{space 3}-.6299493
+{txt}{space 2}Executives {c |}{col 14}{res}{space 2} 53057.79{col 26}{space 2} 759.5901{col 37}{space 1}   69.85{col 46}{space 3}0.000{col 54}{space 4} 51568.96{col 67}{space 3} 54546.61
+{txt}{space 4}Services {c |}{col 14}{res}{space 2} 22126.44{col 26}{space 2} 621.4009{col 37}{space 1}   35.61{col 46}{space 3}0.000{col 54}{space 4} 20908.47{col 67}{space 3} 23344.41
+{txt}{space 7}Labor {c |}{col 14}{res}{space 2} 30472.33{col 26}{space 2}  784.974{col 37}{space 1}   38.82{col 46}{space 3}0.000{col 54}{space 4} 28933.75{col 67}{space 3} 32010.91
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-4247.798{col 26}{space 2} 576.2108{col 37}{space 1}   -7.37{col 46}{space 3}0.000{col 54}{space 4}-5377.193{col 67}{space 3}-3118.403
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> asian = 0, white = 1, other = 0
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}   142,972
+{txt}{hline 13}{c +}{hline 34}   F(6, 142965)    = {res}  7950.59
+{txt}       Model {c |} {res} 1.1048e+14         6  1.8413e+13   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3.3111e+14   142,965  2.3160e+09   {txt}R-squared       ={res}    0.2502
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2502
+{txt}       Total {c |} {res} 4.4159e+14   142,971  3.0886e+09   {txt}Root MSE        =   {res}  48125
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 812.3385{col 26}{space 2} 39.99543{col 37}{space 1}   20.31{col 46}{space 3}0.000{col 54}{space 4} 733.9483{col 67}{space 3} 890.7288
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 221.8844{col 26}{space 2}  34.7352{col 37}{space 1}    6.39{col 46}{space 3}0.000{col 54}{space 4} 153.8041{col 67}{space 3} 289.9647
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-2.504419{col 26}{space 2} .3794687{col 37}{space 1}   -6.60{col 46}{space 3}0.000{col 54}{space 4}-3.248171{col 67}{space 3}-1.760668
+{txt}{space 2}Executives {c |}{col 14}{res}{space 2} 61483.11{col 26}{space 2} 433.7461{col 37}{space 1}  141.75{col 46}{space 3}0.000{col 54}{space 4} 60632.98{col 67}{space 3} 62333.25
+{txt}{space 4}Services {c |}{col 14}{res}{space 2} 24851.67{col 26}{space 2} 404.8238{col 37}{space 1}   61.39{col 46}{space 3}0.000{col 54}{space 4} 24058.22{col 67}{space 3} 25645.11
+{txt}{space 7}Labor {c |}{col 14}{res}{space 2} 34029.06{col 26}{space 2} 480.5572{col 37}{space 1}   70.81{col 46}{space 3}0.000{col 54}{space 4} 33087.18{col 67}{space 3} 34970.94
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-6681.317{col 26}{space 2} 367.3074{col 37}{space 1}  -18.19{col 46}{space 3}0.000{col 54}{space 4}-7401.232{col 67}{space 3}-5961.401
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> asian = 1, white = 0, other = 0
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    10,709
+{txt}{hline 13}{c +}{hline 34}   F(6, 10702)     = {res}   752.36
+{txt}       Model {c |} {res} 1.2360e+13         6  2.0601e+12   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.9304e+13    10,702  2.7382e+09   {txt}R-squared       ={res}    0.2967
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2963
+{txt}       Total {c |} {res} 4.1664e+13    10,708  3.8909e+09   {txt}Root MSE        =   {res}  52327
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 869.3734{col 26}{space 2} 143.8578{col 37}{space 1}    6.04{col 46}{space 3}0.000{col 54}{space 4} 587.3854{col 67}{space 3} 1151.361
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 11.88808{col 26}{space 2} 144.0167{col 37}{space 1}    0.08{col 46}{space 3}0.934{col 54}{space 4}-270.4115{col 67}{space 3} 294.1876
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}  .049988{col 26}{space 2} 1.587443{col 37}{space 1}    0.03{col 46}{space 3}0.975{col 54}{space 4}-3.061695{col 67}{space 3} 3.161671
+{txt}{space 2}Executives {c |}{col 14}{res}{space 2} 74070.73{col 26}{space 2} 1568.879{col 37}{space 1}   47.21{col 46}{space 3}0.000{col 54}{space 4} 70995.43{col 67}{space 3} 77146.02
+{txt}{space 4}Services {c |}{col 14}{res}{space 2} 28019.87{col 26}{space 2} 1574.038{col 37}{space 1}   17.80{col 46}{space 3}0.000{col 54}{space 4} 24934.47{col 67}{space 3} 31105.28
+{txt}{space 7}Labor {c |}{col 14}{res}{space 2} 33269.03{col 26}{space 2} 2252.348{col 37}{space 1}   14.77{col 46}{space 3}0.000{col 54}{space 4} 28854.01{col 67}{space 3} 37684.05
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-6205.746{col 26}{space 2} 1569.419{col 37}{space 1}   -3.95{col 46}{space 3}0.000{col 54}{space 4}-9282.099{col 67}{space 3}-3129.393
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/Cho/Desktop/2016 Single Occupation .smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}28 Oct 2018, 22:28:07
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

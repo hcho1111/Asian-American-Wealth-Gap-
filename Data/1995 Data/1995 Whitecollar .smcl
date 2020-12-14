@@ -1,0 +1,99 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/Cho/Desktop/1995 Blue:White Data .smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}28 Oct 2018, 22:18:15
+
+{com}. regress y educ age age2 whitecollar asian white
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}   149,642
+{txt}{hline 13}{c +}{hline 34}   F(6, 149635)    = {res} 14436.51
+{txt}       Model {c |} {res} 2.0969e+13         6  3.4948e+12   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3.6223e+13   149,635   242077512   {txt}R-squared       ={res}    0.3666
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3666
+{txt}       Total {c |} {res} 5.7192e+13   149,641   382193353   {txt}Root MSE        =   {res}  15559
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 611.0402{col 26}{space 2} 12.77537{col 37}{space 1}   47.83{col 46}{space 3}0.000{col 54}{space 4} 586.0008{col 67}{space 3} 636.0797
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 601.0609{col 26}{space 2} 9.988666{col 37}{space 1}   60.17{col 46}{space 3}0.000{col 54}{space 4} 581.4833{col 67}{space 3} 620.6385
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-7.432388{col 26}{space 2} .1087453{col 37}{space 1}  -68.35{col 46}{space 3}0.000{col 54}{space 4}-7.645526{col 67}{space 3}-7.219249
+{txt}{space 1}whitecollar {c |}{col 14}{res}{space 2} 14756.31{col 26}{space 2} 106.3127{col 37}{space 1}  138.80{col 46}{space 3}0.000{col 54}{space 4} 14547.93{col 67}{space 3} 14964.68
+{txt}{space 7}asian {c |}{col 14}{res}{space 2} 1059.883{col 26}{space 2} 248.1702{col 37}{space 1}    4.27{col 46}{space 3}0.000{col 54}{space 4} 573.4743{col 67}{space 3} 1546.292
+{txt}{space 7}white {c |}{col 14}{res}{space 2} 1687.149{col 26}{space 2} 118.0694{col 37}{space 1}   14.29{col 46}{space 3}0.000{col 54}{space 4} 1455.735{col 67}{space 3} 1918.563
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-7396.788{col 26}{space 2} 146.4429{col 37}{space 1}  -50.51{col 46}{space 3}0.000{col 54}{space 4}-7683.814{col 67}{space 3}-7109.763
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. by asian white other, sort: regress y educ age age2 whitecollar
+
+{txt}{hline}
+-> asian = 0, white = 0, other = 1
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}    20,573
+{txt}{hline 13}{c +}{hline 34}   F(4, 20568)     = {res}  2767.25
+{txt}       Model {c |} {res} 1.5894e+12         4  3.9734e+11   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.9533e+12    20,568   143588234   {txt}R-squared       ={res}    0.3499
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3497
+{txt}       Total {c |} {res} 4.5427e+12    20,572   220819493   {txt}Root MSE        =   {res}  11983
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 399.9701{col 26}{space 2} 27.07015{col 37}{space 1}   14.78{col 46}{space 3}0.000{col 54}{space 4} 346.9104{col 67}{space 3} 453.0297
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 501.0907{col 26}{space 2} 21.41945{col 37}{space 1}   23.39{col 46}{space 3}0.000{col 54}{space 4} 459.1069{col 67}{space 3} 543.0745
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-5.711294{col 26}{space 2} .2468259{col 37}{space 1}  -23.14{col 46}{space 3}0.000{col 54}{space 4}-6.195093{col 67}{space 3}-5.227496
+{txt}{space 1}whitecollar {c |}{col 14}{res}{space 2}  12403.2{col 26}{space 2} 242.8546{col 37}{space 1}   51.07{col 46}{space 3}0.000{col 54}{space 4} 11927.19{col 67}{space 3} 12879.22
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-4553.086{col 26}{space 2} 209.3069{col 37}{space 1}  -21.75{col 46}{space 3}0.000{col 54}{space 4}-4963.344{col 67}{space 3}-4142.828
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> asian = 0, white = 1, other = 0
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}   124,190
+{txt}{hline 13}{c +}{hline 34}   F(4, 124185)    = {res} 17877.13
+{txt}       Model {c |} {res} 1.8341e+13         4  4.5852e+12   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3.1851e+13   124,185   256483284   {txt}R-squared       ={res}    0.3654
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3654
+{txt}       Total {c |} {res} 5.0192e+13   124,189   404159080   {txt}Root MSE        =   {res}  16015
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 664.4135{col 26}{space 2}  14.5149{col 37}{space 1}   45.77{col 46}{space 3}0.000{col 54}{space 4} 635.9645{col 67}{space 3} 692.8625
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 616.3828{col 26}{space 2} 11.30381{col 37}{space 1}   54.53{col 46}{space 3}0.000{col 54}{space 4} 594.2276{col 67}{space 3} 638.5381
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2} -7.71164{col 26}{space 2}  .121913{col 37}{space 1}  -63.26{col 46}{space 3}0.000{col 54}{space 4}-7.950587{col 67}{space 3}-7.472692
+{txt}{space 1}whitecollar {c |}{col 14}{res}{space 2} 14744.14{col 26}{space 2} 118.7396{col 37}{space 1}  124.17{col 46}{space 3}0.000{col 54}{space 4} 14511.41{col 67}{space 3} 14976.87
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-6279.592{col 26}{space 2} 125.8021{col 37}{space 1}  -49.92{col 46}{space 3}0.000{col 54}{space 4}-6526.162{col 67}{space 3}-6033.022
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> asian = 1, white = 0, other = 0
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}     4,879
+{txt}{hline 13}{c +}{hline 34}   F(4, 4874)      = {res}   780.41
+{txt}       Model {c |} {res} 8.1594e+11         4  2.0399e+11   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1.2740e+12     4,874   261381911   {txt}R-squared       ={res}    0.3904
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3899
+{txt}       Total {c |} {res} 2.0899e+12     4,878   428437751   {txt}Root MSE        =   {res}  16167
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           y{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 498.9815{col 26}{space 2} 66.51634{col 37}{space 1}    7.50{col 46}{space 3}0.000{col 54}{space 4} 368.5795{col 67}{space 3} 629.3836
+{txt}{space 9}age {c |}{col 14}{res}{space 2} 462.1529{col 26}{space 2} 60.16573{col 37}{space 1}    7.68{col 46}{space 3}0.000{col 54}{space 4} 344.2009{col 67}{space 3} 580.1048
+{txt}{space 8}age2 {c |}{col 14}{res}{space 2}-4.912217{col 26}{space 2} .7030116{col 37}{space 1}   -6.99{col 46}{space 3}0.000{col 54}{space 4}-6.290437{col 67}{space 3}-3.533997
+{txt}{space 1}whitecollar {c |}{col 14}{res}{space 2} 18850.31{col 26}{space 2} 606.4328{col 37}{space 1}   31.08{col 46}{space 3}0.000{col 54}{space 4} 17661.42{col 67}{space 3} 20039.19
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} -5618.12{col 26}{space 2} 638.2663{col 37}{space 1}   -8.80{col 46}{space 3}0.000{col 54}{space 4} -6869.41{col 67}{space 3}-4366.831
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/Cho/Desktop/1995 Blue:White Data .smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}28 Oct 2018, 22:18:25
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
